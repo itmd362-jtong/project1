@@ -17,3 +17,24 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+p {
+  font-size: 22px; /* 1em */
+  margin-bottom: 20px;
+}
+
+#wrapper {
+  background: white;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
