@@ -52,3 +52,20 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+select {
+  font-size: 13.197px; /* 0.825em */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-size: 22px; /* 1em */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
