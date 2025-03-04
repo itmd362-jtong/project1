@@ -1,4 +1,19 @@
-body{
-  font-family: Lora, Georgia, serif;
+/* Trying to use the sixth modular scale
+https://www.modularscale.com/?22&px&1.667 */
 
+html {
+  font-size: 22px; /* 1em */
+}
+
+body {
+  font-family: Lora, Georgia, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 { 
+  font-size: 61.136px; /* 3.821em */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
