@@ -38,3 +38,17 @@ form {
   flex-direction: column;
   gap: 15px;
 }
+
+label {
+  font-size: 22px; /* 1em */
+  text-align: left;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 22px; /* 1em */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
