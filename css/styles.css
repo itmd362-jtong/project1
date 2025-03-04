@@ -61,6 +61,7 @@ select {
   border-radius: 5px;
   background: white;
   cursor: pointer;
+  width: 100%;
 }
 
 textarea {
