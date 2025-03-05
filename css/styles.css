@@ -10,75 +10,80 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #F9F3EE; /* orange peachy color */
+  color: #4E342E; /* brown text */
 }
 
-h1 { 
+h1 {
   font-size: 61.136px; /* 3.821em */
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 8px;
-  color: #FF5722; /* orange text */
+  color: #D84315; /* orange */
 }
 
 p {
   font-size: 22px; /* 1em */
   margin-bottom: 20px;
-  color: #616161; /* gray text */
+  color: #6D4C41; /* light brown text */
 }
 
 #wrapper {
-  background: white;
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-section {
+  background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 label {
   font-size: 22px; /* 1em */
-  text-align: left;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-input {
+input, select, textarea { /* just combine everything */
   width: 100%;
-  padding: 10px;
-  font-size: 22px; /* 1em */
-  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 22px;
+  border: 2px solid #BCAAA4; /* lightish brown */
   border-radius: 5px;
   box-sizing: border-box;
+  background: #FFF8E1; /* yellowish */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #D84315;
+  outline: none;
+  box-shadow: 0 0 5px rgba(200, 60, 20, 0.5);
+}
+
+.form-submit {
+  background: #D84315; /* looks like orange background behind button */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 input[type="submit"] {
-  background-color: #FF7043; /* orange */
-  color: white;
+  background-color: white;
+  color: #D84315;
   font-weight: bold;
-  cursor: pointer;
-  border: none;
+  border: 2px solid #D84315;
   padding: 15px;
   border-radius: 5px;
-}
-
-input[type="submit"]:hover {
-  background-color: #FF5722; /* darker orange */
-}
-
-select {
-  font-size: 22px; /* 1em */
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: white;
   cursor: pointer;
+  font-size: 22px; /* 1em */
   width: 100%;
 }
 
@@ -86,9 +91,13 @@ textarea {
   width: 100%;
   resize: none;
   font-size: 22px; /* 1em */
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
+
+input[type="submit"]:hover {
+  background-color: #D84315;
+  color: white;
+}
+
 
 @media screen and (min-width: 768px) {
 #wrapper {
