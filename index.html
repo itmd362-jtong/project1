@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nojs">
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,31 +12,33 @@
   <body>
     <h1>Subscribe to our weekly newsletter!</h1>
     <p>Every week, you'll receive a simple and delicious recipe to try!</p>
-  <main id="wrapper">
-    <form method="get" action="#null" autocomplete="on">
-    <div>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-     <label for="preference">Preferred Recipe Type:</label>
+    <main id="wrapper">
+      <form method="get" action="#null" autocomplete="on">
+      <div class="form-section">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-section">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-section">
+        <label for="preference">Preferred Recipe Type:</label>
         <select id="preference" name="preference">
           <option value="meat">Meat</option>
           <option value="vegetarian">Vegetarian</option>
           <option value="vegan">Vegan</option>
           <option value="no-preference">No Preference</option>
         </select>
-    </div>
-    <div>
-    <label for="allergies">Do you have any food allergies? Please specify:</label>
-    <textarea id="allergies" name="allergies" rows="4" maxlength="300"></textarea>
-    </div>
-    <input type="submit" value="CONFIRM NOW">
-    </form>
-  </main>
+      </div>
+      <div class="form-section">
+        <label for="allergies">Food Allergies (if any):</label>
+        <textarea id="allergies" name="allergies" rows="4" maxlength="300"></textarea>
+      </div>
+      <div class="form-submit">
+        <input type="submit" value="CONFIRM NOW">
+      </div>
+      </form>
+    </main>
   </body>
 </html>
