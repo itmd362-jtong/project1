@@ -43,7 +43,7 @@ p {
 }
 
 .form-section {
-  background: white;
+  background: #FFFEFC;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,10 +81,10 @@ input:focus, select:focus, textarea:focus {
 }
 
 input[type="submit"] {
-  background-color: #FFBD6C;
-  color: #864A00;
+  background-color: #FFFEFC;
+  color: #D84315;
   font-weight: bold;
-  border: 2px solid #ED9F40;
+  border: 2px solid #D84315;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -93,8 +93,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #864A00;
-  color: #FFBD6C;
+  background-color: #ED6A40;
+  color: #FFFEFC;
 }
 
 textarea {
