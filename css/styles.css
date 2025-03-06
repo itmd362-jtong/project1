@@ -1,6 +1,11 @@
 /* Trying to use the sixth modular scale
 https://www.modularscale.com/?22&px&1.667 */
 
+/* color ref: 
+https://paletton.com/#uid=50c0u0ksTr6iry8nltGuIlNBigP
+https://paletton.com/#uid=50u0u0k1qvf00++0mJU3cqp63mc
+https://paletton.com/#uid=5090u0kd89N00009Rfmi+8Foj6-
+*/ 
 html {
   font-size: 22px; /* 1em */
 }
@@ -70,21 +75,26 @@ input:focus, select:focus, textarea:focus {
 }
 
 .form-submit {
-  background: #D84315; /* looks like orange background behind button */
+  background: #AE2F07; /* colored background behind button */
   padding: 20px;
   border-radius: 10px;
 }
 
 input[type="submit"] {
-  background-color: white;
-  color: #D84315;
+  background-color: #FFBD6C;
+  color: #864A00;
   font-weight: bold;
-  border: 2px solid #D84315;
+  border: 2px solid #ED9F40;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 22px; /* 1em */
   width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #864A00;
+  color: #FFBD6C;
 }
 
 textarea {
@@ -93,9 +103,11 @@ textarea {
   font-size: 22px; /* 1em */
 }
 
-input[type="submit"]:hover {
-  background-color: #D84315;
-  color: white;
+.char-count {
+  font-size: 13.197px;
+  color: #888;
+  margin-top: 5px;
+  text-align: left;
 }
 
 /* Media queries */
@@ -108,7 +120,7 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  }
+}
 
 .form-section {
   padding: 25px;
@@ -127,6 +139,11 @@ form {
 
 h1 {
   font-size: 61.136px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 32px;
 }
 
 .form-section {
