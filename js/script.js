@@ -3,7 +3,7 @@ console.log("Javascript is loaded");
 
 window.onload = function() {
   // change nojs to hasjs
-  jQuery(function($) {
+  jQuery(function($) { // taking this from the lecture video
     $("html").removeClass("nojs");
     $("html").addClass("hasjs");
 });
@@ -20,9 +20,12 @@ window.onload = function() {
       var name = document.getElementById("name").value;
       alert("Thank you " + name + " for signing up! You'll start receiving our weekly recipes soon!");
       
-      // reset the form
-      form.reset();
-      
+      // reset form using fade in/out
+      $("input[type='submit']").fadeOut(300).fadeIn(300);
+      $(form).fadeOut(500, function() {
+        form.reset(); 
+        $(form).fadeIn(500);
+  });
       return false;
     };
   }
