@@ -3,9 +3,11 @@ console.log("Javascript is loaded");
 
 window.onload = function() {
   // change nojs to hasjs
-  document.documentElement.classList.remove("nojs");
-  document.documentElement.classList.add("hasjs");
-  
+  jQuery(function($) {
+    $("html").removeClass("nojs");
+    $("html").addClass("hasjs");
+});
+ 
   // get form
   var form = document.querySelector("form");
 
