@@ -25,12 +25,13 @@ h1 {
   margin-bottom: 10px;
   padding: 8px;
   color: #D84315; /* orange */
+  font-weight: bold;
 }
 
 p {
   font-size: 22px; /* 1em */
   margin-bottom: 20px;
-  color: #6D4C41; /* light brown text */
+  color: #FFFEFC; 
 }
 
 #wrapper {
@@ -78,6 +79,15 @@ input:focus, select:focus, textarea:focus {
   background: #AE2F07; /* colored background behind button */
   padding: 20px;
   border-radius: 10px;
+}
+
+.heading { /* background image from https://heropatterns.com/ */ 
+  background-color: #FFBD6C;
+  background-image: url("../images/i-like-food1.svg");  
+  padding: 20px;
+  border-radius: 10px;
+  color: #FFFEFC;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
 }
 
 input[type="submit"] {
