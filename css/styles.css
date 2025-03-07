@@ -87,7 +87,8 @@ input:focus, select:focus, textarea:focus {
   padding: 20px;
   border-radius: 10px;
   color: #FFFEFC;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 5px rgba(200, 60, 20, 0.5); 
 }
 
 input[type="submit"] {
